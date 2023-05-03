@@ -1,0 +1,5 @@
+The BookProvider component is created using the createContext hook from React. It initializes a state using the useState hook to store an array of books. The toggleRead function is used to toggle the read status of a book based on its ID. The BookContext.Provider component is used to provide the state and the toggleRead function to all child components.
+
+The BookList component is used to display the list of books and their read status. It uses the useContext hook to retrieve the books and toggleRead values from the BookContext. It then maps through the books array and renders a list item for each book. The title of the book and a button to toggle its read status are displayed in each list item.
+
+Finally, the App component is used to wrap the BookList component with the BookProvider. This ensures that the state and the toggleRead function are available to all child components of BookProvider.
